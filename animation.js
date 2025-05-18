@@ -1,4 +1,8 @@
 // Initialize GSAP and plugins
+console.log("hello world");
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Initialize Lenis for smooth scrolling
