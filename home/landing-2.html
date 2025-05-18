@@ -1,0 +1,581 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun May 18 2025 12:31:49 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6814167788bd9f92e78d702b" data-wf-site="67b68fdf50e810f9f1c02136" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>landing-2</title>
+  <meta content="landing-2" property="og:title">
+  <meta content="landing-2" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/lumos-v2-e3d2c6.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Changa One:400,400italic","Oswald:200,300,400,500,600,700","Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="page_wrap">
+    <div class="page_code_wrap">
+      <div class="page_code_base w-embed">
+        <style>
+:root {
+  --site--max-width: min(var(--site--width), 100%);
+  --container--main: calc(var(--site--max-width) - var(--site--margin) * 2);
+  --container--full: calc(100% - var(--site--margin) * 2);
+  --site--gutter-total: calc(var(--site--gutter) * (var(--site--column-count) - 1));
+  --column-width-outer--plus-gutter: calc( ( ( ( var(--container--main) - var(--site--gutter-total) ) / var(--site--column-count) ) + var(--site--gutter) ) );
+	--column-width-outer--1: calc(var(--column-width-outer--plus-gutter) - var(--site--gutter));
+  --container--small: calc( var(--column-width-outer--plus-gutter) * ( var(--site--column-count) - 2 ) - var(--site--gutter) );
+  --site--gutter-total: calc(var(--site--gutter) * (var(--site--column-count) - 1));
+  --column-width--1: calc(100% - var(--site--gutter-total)) / var(--site--column-count);
+  --column-width--plus-gutter: calc(var(--column-width--1) + var(--site--gutter));
+  --column-width--2: calc(var(--column-width--plus-gutter) * 2 - var(--site--gutter));
+  --column-width--3: calc(var(--column-width--plus-gutter) * 3 - var(--site--gutter));
+  --column-width--4: calc(var(--column-width--plus-gutter) * 4 - var(--site--gutter));
+  --column-width--5: calc(var(--column-width--plus-gutter) * 5 - var(--site--gutter));
+  --column-width--6: calc(var(--column-width--plus-gutter) * 6 - var(--site--gutter));
+  --column-width--7: calc(var(--column-width--plus-gutter) * 7 - var(--site--gutter));
+  --column-width--8: calc(var(--column-width--plus-gutter) * 8 - var(--site--gutter));
+  --column-width--9: calc(var(--column-width--plus-gutter) * 9 - var(--site--gutter));
+  --column-width--10: calc(var(--column-width--plus-gutter) * 10 - var(--site--gutter));
+  --column-width--11: calc(var(--column-width--plus-gutter) * 11 - var(--site--gutter));
+  --column-width--12: calc(var(--column-width--plus-gutter) * 12 - var(--site--gutter));
+  --column-margin--1: calc(var(--column-width--plus-gutter) * 1);
+  --column-margin--2: calc(var(--column-width--plus-gutter) * 2);
+  --column-margin--3: calc(var(--column-width--plus-gutter) * 3);
+  --column-margin--4: calc(var(--column-width--plus-gutter) * 4);
+  --column-margin--5: calc(var(--column-width--plus-gutter) * 5);
+  --column-margin--6: calc(var(--column-width--plus-gutter) * 6);
+  --column-margin--7: calc(var(--column-width--plus-gutter) * 7);
+  --column-margin--8: calc(var(--column-width--plus-gutter) * 8);
+  --column-margin--9: calc(var(--column-width--plus-gutter) * 9);
+  --column-margin--10: calc(var(--column-width--plus-gutter) * 10);
+  --column-margin--11: calc(var(--column-width--plus-gutter) * 11);
+  --column-margin--12: calc(var(--column-width--plus-gutter) * 12);
+  --breakout-start: [full-start] minmax(0, 1fr) [content-start];
+  --breakout-end: [content-end] minmax(0, 1fr) [full-end];
+  --grid-breakout-single: var(--breakout-start) minmax(0, var(--container--main)) var(--breakout-end);
+  --grid-breakout: var(--breakout-start) repeat(var(--site--column-count), minmax(0, var(--column-width-outer--1))) var(--breakout-end);
+  --grid-main: repeat(var(--site--column-count), minmax(0, 1fr));
+  --grid-1: repeat(1, minmax(0, 1fr));
+  --grid-2: repeat(2, minmax(0, 1fr));
+  --grid-3: repeat(3, minmax(0, 1fr));
+  --grid-4: repeat(4, minmax(0, 1fr));
+  --grid-5: repeat(5, minmax(0, 1fr));
+  --grid-6: repeat(6, minmax(0, 1fr));
+  --grid-7: repeat(7, minmax(0, 1fr));
+  --grid-8: repeat(8, minmax(0, 1fr));
+  --grid-9: repeat(9, minmax(0, 1fr));
+  --grid-10: repeat(10, minmax(0, 1fr));
+  --grid-11: repeat(11, minmax(0, 1fr));
+  --grid-12: repeat(12, minmax(0, 1fr));
+	--_typography---text-transform--none: none;
+	--_typography---text-transform--uppercase: uppercase;
+	--_typography---text-transform--captialize: capitalize;
+	--_typography---text-transform--lowercase: lowercase;
+	--align--flex-start: flex-start;
+	--align--flex-center: center;
+	--align--flex-end: flex-end;
+	--align--text-left: left;
+	--align--text-center: center;
+	--align--text-right: right;
+}
+* {
+	vertical-align: bottom;
+}
+::before, ::after {
+	box-sizing: border-box;
+}
+html {
+	background-color: var(--_theme---background);
+}
+button {
+	background-color: unset;
+	padding: unset;
+	text-align: inherit;
+}
+button:not(:disabled) {
+	cursor: pointer;
+}
+video {
+	width: 100%;
+	object-fit: cover;
+}
+video.wf-empty {
+	padding: 0;
+}
+svg {
+	max-width: 100%;
+}
+section, header, footer {
+	position: relative;
+}
+@media (prefers-color-scheme: light) {
+	option {
+		color: black;
+	}
+}
+img::selection {
+	background: transparent;
+}
+/* Typography */
+body {
+	text-transform: var(--_text-style---text-transform);
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+/* Clear Defaults */
+a:not([class]) {
+	text-decoration: underline;
+}
+h1,h2,h3,h4,h5,h6,p,blockquote,label {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	text-transform: inherit;
+	text-wrap: inherit;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* Margin Trim */
+:is(.u-margin-trim, .u-rich-text) > :not(:not(.w-condition-invisible) ~ :not(.w-condition-invisible)) {
+	margin-top: 0;
+}
+:is(.u-margin-trim, .u-rich-text) > :not(:has(~ :not(.w-condition-invisible))) {
+	margin-bottom: 0;
+}
+.w-richtext a {
+	position: relative;
+	z-index: 4;
+}
+/* Line Height Trim */
+:is([class*="u-text-style-"], .u-rich-text :is(h1,h2,h3,h4,h5,h6,p))::before {
+	content: "";
+	display: table;
+	margin-bottom: calc(-0.5lh + var(--_text-style---trim-top));
+}
+:is([class*="u-text-style-"], .u-rich-text :is(h1,h2,h3,h4,h5,h6,p))::after {
+	content: "";
+	display: table;
+	margin-bottom: calc(-0.5lh + var(--_text-style---trim-bottom));
+}
+/* Line Clamp */
+.u-line-clamp-1, .u-line-clamp-2, .u-line-clamp-3, .u-line-clamp-4 {
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.u-line-clamp-2 { -webkit-line-clamp: 2; }
+.u-line-clamp-3 { -webkit-line-clamp: 3; }
+.u-line-clamp-4 { -webkit-line-clamp: 4; }
+/* Child Contain */
+.u-child-contain > * {
+	width: 100%;
+	max-width: inherit;
+}
+/* Hide */
+.u-hide-if-empty:empty,
+.u-hide-if-empty:not(:has(> :not(.w-condition-invisible))),
+.u-hide-if-empty-cms:not(:has(.w-dyn-item)),
+.w-richtext[class*="u-text-style-"] > :not(h1,h2,h3,h4,h5,h6,p,blockquote,ul,ol,span),
+.u-embed-js,
+.u-embed-css {
+	display: none !important;
+}
+/* Focus State */
+a, button, :where([tabindex]),
+.w-checkbox-input--inputType-custom,
+.w-form-formradioinput--inputType-custom {
+	outline-offset: var(--focus--offset-outer);
+}
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+.w-checkbox:has(:focus-visible) .w-checkbox-input--inputType-custom,
+.w-radio:has(:focus-visible) .w-form-formradioinput--inputType-custom {
+	outline-color: var(--_theme---text);
+	outline-width: var(--focus--width);
+	outline-style: solid;
+}
+.w-checkbox-input--inputType-custom.w--redirected-focus,
+.w-form-formradioinput--inputType-custom.w--redirected-focus {
+	box-shadow: none;
+}
+/* Global / Clickable Component */
+.wf-design-mode .g_clickable_wrap {
+	z-index: 0;
+}
+.g_clickable_wrap a[href="#"] {
+	display: none;
+}
+.g_clickable_wrap a[href="#"] ~ button {
+	display: block;
+}
+</style>
+      </div>
+      <div class="page_code_custom w-embed">
+        <style>
+</style>
+      </div>
+      <style>:root {--site--margin: clamp(1rem, 0.3548387096774194rem + 3.225806451612903vw, 3.5rem);--size--2rem: clamp(1.75rem, 1.685483870967742rem + 0.3225806451612903vw, 2rem);--size--2-5rem: clamp(2rem, 1.8709677419354838rem + 0.6451612903225806vw, 2.5rem);--size--3rem: clamp(2.25rem, 2.056451612903226rem + 0.967741935483871vw, 3rem);--size--3-5rem: clamp(2.375rem, 2.0846774193548385rem + 1.4516129032258065vw, 3.5rem);--size--4rem: clamp(2.5rem, 2.1129032258064515rem + 1.935483870967742vw, 4rem);--size--4-5rem: clamp(2.75rem, 2.2983870967741935rem + 2.258064516129032vw, 4.5rem);--size--5rem: clamp(3rem, 2.4838709677419355rem + 2.5806451612903225vw, 5rem);--size--5-5rem: clamp(3.25rem, 2.6693548387096775rem + 2.903225806451613vw, 5.5rem);--size--6rem: clamp(3.5rem, 2.8548387096774195rem + 3.225806451612903vw, 6rem);--size--6-5rem: clamp(3.75rem, 3.0403225806451615rem + 3.5483870967741935vw, 6.5rem);--size--7rem: clamp(4rem, 3.225806451612903rem + 3.870967741935484vw, 7rem);--size--7-5rem: clamp(4.25rem, 3.411290322580645rem + 4.193548387096775vw, 7.5rem);--size--8rem: clamp(4.5rem, 3.596774193548387rem + 4.516129032258064vw, 8rem);--size--8-5rem: clamp(4.75rem, 3.782258064516129rem + 4.838709677419355vw, 8.5rem);--size--9rem: clamp(5rem, 3.967741935483871rem + 5.161290322580645vw, 9rem);--size--9-5rem: clamp(5.25rem, 4.153225806451613rem + 5.483870967741936vw, 9.5rem);--size--10rem: clamp(5.5rem, 4.338709677419355rem + 5.806451612903226vw, 10rem);--size--11rem: clamp(5.75rem, 4.395161290322581rem + 6.774193548387098vw, 11rem);--size--12rem: clamp(6rem, 4.451612903225806rem + 7.741935483870968vw, 12rem);--size--13rem: clamp(6.5rem, 4.82258064516129rem + 8.38709677419355vw, 13rem);--size--14rem: clamp(7rem, 5.193548387096774rem + 9.032258064516128vw, 14rem);--size--15rem: clamp(7.5rem, 5.564516129032258rem + 9.67741935483871vw, 15rem);--size--16rem: clamp(8rem, 5.935483870967742rem + 10.32258064516129vw, 16rem);}</style>
+    </div>
+    <div class="styleguide_guide_wrap">
+      <div class="w-embed">
+        <style>
+html:not(.wf-design-mode) .styleguide_guide_wrap {
+	display: none;
+}
+.styleguide_guide_layout {
+	counter-reset: gridguides;
+}
+.styleguide_guide_layout > div::before {
+  counter-increment: gridguides;
+  content: counter(gridguides);
+}
+</style>
+      </div>
+      <div data-padding-bottom="none" data-padding-top="none" class="styleguide_guide_contain u-container">
+        <div class="styleguide_guide_layout u-grid-custom">
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+          <div class="styleguide_guide_column u-vflex-center-bottom"></div>
+        </div>
+      </div>
+    </div>
+    <main id="main" class="page_main"></main>
+    <section class="header_wrap">
+      <div class="g_section_space even-3"></div>
+      <div class="component50544_contain header_contain u-container">
+        <div class="hero-wrapper">
+          <div data-w-id="84483cab-0f44-4d24-a2e0-78102f46f507" style="-webkit-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="intro-title">
+            <div class="flex-column space-md"><img sizes="(max-width: 1000px) 100vw, 1000px" srcset="../images/Untitled-final-p-500.webp 500w, ../images/Untitled-final-p-800.webp 800w, ../images/Untitled-final.webp 1000w" alt="" src="../images/Untitled-final.webp" loading="lazy" class="img-size-100 rounded">
+              <div class="g_heading w-richtext u-text-style-h2 u-mb-text u-max-width-20ch u-child-contain">
+                <p>Crafting High-Converting Websites with Webflow, Shopify &amp; SEO</p>
+              </div>
+              <div class="g_paragraph w-richtext u-text-style-main u-mb-text u-child-contain u-rich-text">
+                <p>I’m David Toro — a Webflow Developer, Shopify Liquid expert, and SEO strategist helping eCommerce brands and digital creatives grow online. From custom animations to programmatic SEO, I design tailored solutions that increase conversions, improve user experience, and scale organic traffic. Whether you’re launching a new product or need a powerful landing page, I’m here to turn your vision into a digital reality.</p>
+              </div>
+            </div>
+            <div class="flex-column space-sm">
+              <a href="#" class="social-icon w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="social-icon-item iconify iconify--ph" width="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 256 256">
+                  <path fill="currentColor" d="M176 24H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56m-48 152a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48m60-96a12 12 0 1 1 12-12a12 12 0 0 1-12 12m-28 48a32 32 0 1 1-32-32a32 32 0 0 1 32 32"></path>
+                </svg></a>
+              <a href="#" class="social-icon w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="social-icon-item iconify iconify--simple-icons" width="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037c-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85c3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065a2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"></path>
+                </svg></a>
+              <a href="#" class="social-icon w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="social-icon-item iconify iconify--simple-icons" width="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M21.543 7.104c.015.211.015.423.015.636c0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041a4.93 4.93 0 0 1-4.6-3.42a4.9 4.9 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.9 4.9 0 0 0 2.235.616A4.93 4.93 0 0 1 1.67 3.148a13.98 13.98 0 0 0 10.15 5.144a4.929 4.929 0 0 1 8.39-4.49a9.9 9.9 0 0 0 3.128-1.196a4.94 4.94 0 0 1-2.165 2.724A9.8 9.8 0 0 0 24 4.555a10 10 0 0 1-2.457 2.549"></path>
+                </svg></a>
+            </div>
+          </div>
+          <div data-w-id="84483cab-0f44-4d24-a2e0-78102f46f51a" style="-webkit-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="intro-img"><img sizes="(max-width: 888px) 100vw, 888px" srcset="../images/Adventure-p-500.webp 500w, ../images/Adventure-p-800.webp 800w, ../images/Adventure.webp 888w" alt="" loading="lazy" src="../images/Adventure.webp" class="img-full-size"></div>
+        </div>
+      </div>
+      <div class="g_section_space even-3"></div>
+    </section>
+    <section class="bento_wrap">
+      <div class="g_section_space"></div>
+      <div class="component48679_contain bento_contain u-container">
+        <div class="flex-row">
+          <div class="bento_wrapper-card">
+            <div class="bento cta-secondary"><img src="../images/website-design-2-64_1website-design-2-64.png" loading="lazy" alt="" class="img-size-54">
+              <div class="flex-column space-xs">
+                <div class="g_heading w-richtext u-text-style-h4 u-mb-text u-max-width-20ch u-child-contain">
+                  <p>Custom Web Animations</p>
+                  <p>‍</p>
+                </div>
+                <div class="g_paragraph w-richtext u-text-style-main u-mb-text u-child-contain u-rich-text">
+                  <p>Bring your site to life with seamless animations built in Webflow. I create scroll-based interactions, hover effects, and engaging motion that boost user experience and increase time on page.</p>
+                </div>
+              </div>
+              <div class="flex-row space-md"></div>
+            </div>
+          </div>
+          <div class="bento_wrapper-card">
+            <div class="bento cta-secondary"><img src="../images/seo-performance-3-64_1seo-performance-3-64.png" loading="lazy" alt="" class="img-size-54">
+              <div class="flex-column space-xs">
+                <div class="g_heading w-richtext u-text-style-h4 u-mb-text u-max-width-20ch u-child-contain">
+                  <p>Programmatic SEO</p>
+                  <p>‍</p>
+                </div>
+                <div class="g_paragraph w-richtext u-text-style-main u-mb-text u-child-contain u-rich-text">
+                  <p>Boost your organic traffic with scalable SEO strategies. I combine automation, content design, and keyword clustering to build pages that rank and convert — fast.</p>
+                </div>
+              </div>
+              <div class="flex-row space-md"></div>
+            </div>
+          </div>
+          <div class="bento_wrapper-card">
+            <div class="bento cta-secondary"><img src="../images/bank-cards-64_1bank-cards-64.png" loading="lazy" alt="" class="img-size-54">
+              <div class="flex-column space-xs">
+                <div class="g_heading w-richtext u-text-style-h4 u-mb-text u-max-width-20ch u-child-contain">
+                  <p>Shopify Liquid Development</p>
+                  <p>‍</p>
+                </div>
+                <div class="g_paragraph w-richtext u-text-style-main u-mb-text u-child-contain u-rich-text">
+                  <p>Transform any Shopify theme into a powerful eCommerce engine. From product page tweaks to full custom sections, I write clean Liquid code that elevates your store’s performance.</p>
+                </div>
+              </div>
+              <div class="flex-row space-md"></div>
+            </div>
+          </div>
+          <div class="bento_wrapper-card">
+            <div class="bento cta-secondary"><img src="../images/business-contact-64_1business-contact-64.png" loading="lazy" alt="" class="img-size-54">
+              <div class="flex-column space-xs">
+                <div class="g_heading w-richtext u-text-style-h4 u-mb-text u-max-width-20ch u-child-contain">
+                  <p>Got a project in mind?</p>
+                  <p>‍</p>
+                </div>
+                <div class="g_paragraph w-richtext u-text-style-main u-mb-text u-child-contain u-rich-text">
+                  <p>Let’s bring your idea to life. I&#x27;m just one message away.</p>
+                </div>
+                <div class="btn_main_wrap">
+                  <div class="g_clickable_wrap">
+                    <a target="" href="#" class="g_clickable_link w-inline-block"><span class="g_clickable_text u-sr-only">Start the conversation</span></a>
+                  </div>
+                  <div aria-hidden="true" class="component48679_paragraph u-text-style-main">Start the conversation</div>
+                </div>
+              </div>
+              <div class="flex-row space-md"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="g_section_space even-3"></div>
+    </section>
+    <section class="projects_wrap">
+      <div class="g_section_space"></div>
+      <div class="component48679_contain projects_content u-container">
+        <div class="flex-row">
+          <div class="stretch-child">
+            <aside data-w-id="84483cab-0f44-4d24-a2e0-78102f46f5d0" style="-webkit-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="bento project-card">
+              <div class="flex-row space-between align-start">
+                <div>
+                  <div class="g_heading w-richtext u-text-style-h3 u-mb-text u-max-width-20ch u-child-contain">
+                    <h2>Lorem ipsum dolor sit amet elit</h2>
+                  </div>
+                  <div class="div-block">
+                    <div class="tag">
+                      <div class="tag-text">identidy</div>
+                    </div>
+                    <div class="tag">
+                      <div class="tag-text">identidy</div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn-arrow w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon-row iconify iconify--ic" width="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                    <path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z"></path>
+                  </svg></a>
+              </div>
+              <div class="image-wrapper project-card"><img sizes="(max-width: 888px) 100vw, 888px" srcset="../images/Adventure-p-500.webp 500w, ../images/Adventure-p-800.webp 800w, ../images/Adventure.webp 888w" alt="" src="../images/Adventure.webp" loading="lazy" class="animate-grow"></div>
+            </aside>
+          </div>
+          <div class="stretch-child">
+            <aside data-w-id="84483cab-0f44-4d24-a2e0-78102f46f5e3" style="-webkit-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 20px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="bento project-card">
+              <div class="flex-row space-between align-start">
+                <div>
+                  <div class="g_heading w-richtext u-text-style-h3 u-mb-text u-max-width-20ch u-child-contain">
+                    <h2>Lorem ipsum dolor sit amet elit</h2>
+                  </div>
+                  <div class="div-block">
+                    <div class="tag">
+                      <div class="tag-text">identidy</div>
+                    </div>
+                    <div class="tag">
+                      <div class="tag-text">identidy</div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn-arrow w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon-row iconify iconify--ic" width="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                    <path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z"></path>
+                  </svg></a>
+              </div>
+              <div class="image-wrapper"><img sizes="(max-width: 888px) 100vw, 888px" srcset="../images/Adventure-p-500.webp 500w, ../images/Adventure-p-800.webp 800w, ../images/Adventure.webp 888w" alt="" src="../images/Adventure.webp" loading="lazy" class="animate-grow"></div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="g_section_space even-2"></div>
+    </section>
+    <section data-wf--section-testimonia--variant="dark" class="testimonial_wrap">
+      <div data-wf--global-section-space--section-space="main" class="g_section_space w-variant-60a7ad7d-02b0-6682-95a5-2218e6fd1490"></div>
+      <div class="testimonials_contain u-container">
+        <div class="flex-row">
+          <div data-w-id="e6a44bf8-e485-af6e-0de1-6a0cc73f3115" class="image-wrapper-2 img-testimonial"><img sizes="(max-width: 991px) 100vw, 888.0035400390625px" srcset="../images/Magic-p-500.webp 500w, ../images/Magic-p-800.webp 800w, ../images/Magic.webp 888w" alt="" src="../images/Magic.webp" loading="lazy" class="testimonial_img"></div>
+          <div class="testimonial-card bento">
+            <div class="flex-column space-md">
+              <div><img loading="lazy" src="../images/quote.svg" alt="" class="bento-icon"></div>
+              <div class="g_paragraph w-richtext u-text-style-main u-mb-text u-child-contain u-rich-text">
+                <p>“Trabajar con Totoro Pixel fue una experiencia totalmente profesional. Desde Estados Unidos, necesitábamos una agencia que pudiera desarrollar un sitio web visualmente atractivo, multilingüe y optimizado para buscadores. No solo cumplieron con nuestras expectativas, sino que superaron cada entrega con soluciones innovadoras y adaptadas a nuestro mercado.</p>
+              </div>
+            </div>
+            <div class="testimonial_client">
+              <div class="testimonial-author"><img sizes="100vw" srcset="../images/team-4-p-500.jpeg 500w, ../images/team-4-p-800.jpeg 800w, ../images/team-4-p-1080.jpeg 1080w, ../images/team-4.jpeg 1600w" alt="" src="../images/team-4.jpeg" loading="lazy" class="img-size-54 rounded">
+                <div class="testimonial_name">
+                  <div>📍Vertex Solutions Inc.</div>
+                  <div class="color-text-secondary"><em>Servicios generales para empresas y soluciones logísticas globales – Houston, TX, USA</em></div>
+                </div>
+              </div>
+              <a href="https://api.whatsapp.com/send?phone=573222781606&amp;text=Hola%2C%20gracias%20por%20tu%20inter%C3%A9s.%20%C2%BFTienes%20un%20proyecto%20o%20quieres%20saber%20c%C3%B3mo%20podemos%20ayudarte%20desde%20Totoro%20Pixel%3F%20Escr%C3%ADbenos%20y%20te%20responderemos%20pronto." target="_blank" class="btn-arrow w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon-row iconify iconify--ic" width="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z"></path>
+                </svg></a>
+            </div>
+          </div>
+          <div data-w-id="e6a44bf8-e485-af6e-0de1-6a0cc73f3129" class="image-wrapper-2 img-testimonial"><img sizes="(max-width: 991px) 100vw, 888.0035400390625px" srcset="../images/Magic-p-500.webp 500w, ../images/Magic-p-800.webp 800w, ../images/Magic.webp 888w" alt="" src="../images/Magic.webp" loading="lazy" class="testimonial_img"></div>
+        </div>
+      </div>
+      <div data-wf--global-section-space--section-space="main" class="g_section_space w-variant-60a7ad7d-02b0-6682-95a5-2218e6fd1490"></div>
+    </section>
+    <section id="contact" class="footer_wrap">
+      <div data-wf--global-section-space--section-space="main" class="g_section_space w-variant-60a7ad7d-02b0-6682-95a5-2218e6fd1490"></div>
+      <div class="footer_contain u-container">
+        <div class="flex-row">
+          <div class="bento cta-secondary"><img loading="lazy" src="../images/abstract-2.svg" alt="" class="img-size-54">
+            <div class="flex-column space-xs">
+              <h2>¿Tienes un proyecto en mente?</h2>
+              <p class="color-text-secondary">Hablemos de cómo escalarlo con diseño, Webflow y automatización.</p>
+            </div>
+            <div class="flex-column space-sm">
+              <a href="#" class="social-icon hide w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="social-icon-item iconify iconify--ph" width="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 256 256">
+                  <path fill="currentColor" d="M176 24H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56m-48 152a48 48 0 1 1 48-48a48.05 48.05 0 0 1-48 48m60-96a12 12 0 1 1 12-12a12 12 0 0 1-12 12m-28 48a32 32 0 1 1-32-32a32 32 0 0 1 32 32"></path>
+                </svg></a>
+              <a href="https://www.linkedin.com/company/totoropixel/" target="_blank" class="social-icon w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="social-icon-item iconify iconify--simple-icons" width="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037c-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85c3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065a2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"></path>
+                </svg></a>
+              <a href="#" class="social-icon hide w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="social-icon-item iconify iconify--simple-icons" width="100%" preserveaspectratio="xMidYMid meet" viewbox="0 0 24 24">
+                  <path fill="currentColor" d="M21.543 7.104c.015.211.015.423.015.636c0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041a4.93 4.93 0 0 1-4.6-3.42a4.9 4.9 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.9 4.9 0 0 0 2.235.616A4.93 4.93 0 0 1 1.67 3.148a13.98 13.98 0 0 0 10.15 5.144a4.929 4.929 0 0 1 8.39-4.49a9.9 9.9 0 0 0 3.128-1.196a4.94 4.94 0 0 1-2.165 2.724A9.8 9.8 0 0 0 24 4.555a10 10 0 0 1-2.457 2.549"></path>
+                </svg></a>
+            </div>
+          </div>
+          <div data-w-id="be35263b-02f9-ea62-1903-1a98c6a0ac42" class="bento others-projects">
+            <h2>¿Quieres ver más casos reales?</h2>
+            <div>
+              <a href="https://api.whatsapp.com/send?phone=573222781606&amp;text=Hola%2C%20gracias%20por%20tu%20inter%C3%A9s.%20%C2%BFTienes%20un%20proyecto%20o%20quieres%20saber%20c%C3%B3mo%20podemos%20ayudarte%20desde%20Totoro%20Pixel%3F%20Escr%C3%ADbenos%20y%20te%20responderemos%20pronto." data-w-id="be35263b-02f9-ea62-1903-1a98c6a0ac46" target="_blank" class="work-list-item w-inline-block">
+                <p class="p-medium">→ genera curiosidad + resultados</p>
+                <div class="btn-arrow"><img loading="lazy" src="../images/arrow-1.svg" alt="" class="bento-icon animate-rotate"></div>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=573222781606&amp;text=Hola%2C%20gracias%20por%20tu%20inter%C3%A9s.%20%C2%BFTienes%20un%20proyecto%20o%20quieres%20saber%20c%C3%B3mo%20podemos%20ayudarte%20desde%20Totoro%20Pixel%3F%20Escr%C3%ADbenos%20y%20te%20responderemos%20pronto." data-w-id="be35263b-02f9-ea62-1903-1a98c6a0ac4b" target="_blank" class="work-list-item w-inline-block">
+                <p class="p-medium">→ afirma que hay pruebas y no promesas</p>
+                <div class="btn-arrow"><img loading="lazy" src="../images/arrow-1.svg" alt="" class="bento-icon animate-rotate"></div>
+              </a>
+              <a href="../diagnostico-gratis.html" data-w-id="be35263b-02f9-ea62-1903-1a98c6a0ac50" class="work-list-item w-inline-block">
+                <p class="p-medium">Contactanos</p>
+                <div class="btn-arrow"><img loading="lazy" src="../images/arrow-1.svg" alt="" class="bento-icon animate-rotate"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="logo-copyright">
+          <a href="#" class="logo w-nav-brand">
+            <div class="logo-name">TOTOROPIXEL</div>
+          </a>
+          <p class="color-text-secondary">© TOTOROPIXEL 2019–2025 · Todos los derechos reservados.</p>
+        </div>
+      </div>
+      <footer class="footer14_component">
+        <div class="footer14_contain u-container">
+          <div class="padding-vertical padding-xxlarge">
+            <div class="padding-vertical padding-xxlarge">
+              <div class="divider-horizontal"></div>
+            </div>
+            <div class="padding-bottom padding-xxlarge">
+              <div class="w-layout-grid footer14_top-wrapper">
+                <div class="footer14_link-column">
+                  <div class="u-weight-bold u-mb-2">Column One</div>
+                  <div class="footer14_link-list">
+                    <a href="../index.html" class="footer14_link">home</a>
+                    <a href="../sobre-nosotros.html" class="footer14_link">Sobre Nosotros</a>
+                    <a href="../marketing.html" class="footer14_link">marketing-ciudades</a>
+                    <a href="#" class="footer14_link">Link Four</a>
+                    <a href="#" class="footer14_link">Link Five</a>
+                  </div>
+                </div>
+                <div class="footer14_link-column">
+                  <div class="u-weight-bold u-mb-2">Column Two</div>
+                  <div class="footer14_link-list">
+                    <a href="#" class="footer14_link">Link Six</a>
+                    <a href="#" class="footer14_link">Link Seven</a>
+                    <a href="#" class="footer14_link">Link Eight</a>
+                    <a href="#" class="footer14_link">Link Nine</a>
+                    <a href="#" class="footer14_link">Link Ten</a>
+                  </div>
+                </div>
+                <div class="footer14_link-column">
+                  <div class="u-weight-bold u-mb-2">Column Three</div>
+                  <div class="footer14_link-list">
+                    <a href="#" class="footer14_link">Link Eleven</a>
+                    <a href="#" class="footer14_link">Link Twelve</a>
+                    <a href="#" class="footer14_link">Link Thirteen</a>
+                    <a href="#" class="footer14_link">Link Fourteen</a>
+                    <a href="#" class="footer14_link">Link Fifteen</a>
+                  </div>
+                </div>
+                <div class="footer14_link-column">
+                  <div class="u-weight-bold u-mb-2">Column Four</div>
+                  <div class="footer14_link-list">
+                    <a href="#" class="footer14_link">Link Sixteen</a>
+                    <a href="#" class="footer14_link">Link Seventeen</a>
+                    <a href="#" class="footer14_link">Link Eighteen</a>
+                    <a href="#" class="footer14_link">Link Nineteen</a>
+                    <a href="#" class="footer14_link">Link Twenty</a>
+                  </div>
+                </div>
+                <div class="footer14_link-column">
+                  <div class="u-weight-bold u-mb-2">Column Five</div>
+                  <div class="footer14_link-list">
+                    <a href="#" class="footer14_link">Link Twenty One</a>
+                    <a href="#" class="footer14_link">Link Twenty Two</a>
+                    <a href="#" class="footer14_link">Link Twenty Three</a>
+                    <a href="#" class="footer14_link">Link Twenty Four</a>
+                    <a href="#" class="footer14_link">Link Twenty Five</a>
+                  </div>
+                </div>
+                <div class="footer14_link-column">
+                  <div class="u-weight-bold u-mb-2">Column Six</div>
+                  <div class="footer14_link-list">
+                    <a href="#" class="footer14_link">Link Twenty Six</a>
+                    <a href="#" class="footer14_link">Link Twenty Seven</a>
+                    <a href="#" class="footer14_link">Link Twenty Eight</a>
+                    <a href="#" class="footer14_link">Link Twenty Nine</a>
+                    <a href="#" class="footer14_link">Link Thirty</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div data-wf--global-section-space--section-space="main" class="g_section_space w-variant-60a7ad7d-02b0-6682-95a5-2218e6fd1490"></div>
+    </section>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=67b68fdf50e810f9f1c02136" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
